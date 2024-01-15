@@ -1,0 +1,34 @@
+Initially JS was used to to little scripting tasks,
+but as 
+
+Modules - Encapsulate the code, means code within one Modules   
+    is not accessible from other modules unless not imported.
+- This prevent naming conflict and better code struucture.
+
+- Export - Allow to export variable, functions, classes etc.
+- Two types of exports 
+    - Named exports
+    - Default exports
+
+- A modules can have multiple named exports but have only one default export.
+
+- Import  - Allow to bring exported value from a mentioned modules.
+ - importing named exporting - by enclosing in {}, mentioning the exact named
+    exported modules named exportef values
+    - Can rename these 
+ - import default value - 
+ - Namespace importing - 
+    - It import all named export and default exports
+
+
+Dynamic modules loading - Allow to import modules when needed.
+Use case
+import("moduleSpecifier") return a Promise that resolve to when modules is loaded 
+succeffully or reject if not loaded.
+- Loading modules on demand
+- Loading based on cnondition
+- Computed modules specifier - Locales
+
+let greeting = await import('./greeting.js');
+greeting.default();
+
